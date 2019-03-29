@@ -649,7 +649,7 @@ LOGONF
 if(314cv==1){51cv=0;314cv=0;311cv=0;68cv=0}     	'Mengembalikan Nilai 51cv, 314cv, 311cv, 68cv ke 0
 
 RG10M                                           	'Schedule G Pengiriman Data ke FTP per 10 Menit
-Do{CopyD Sched=F Dest="ftp://aaws:aaws@aawsbmkg.dyndns.org/xxx_?(Timestamp).csv" Format=csv Alarm=No Start=New} 'FTP push -ganti xxxx dengan nama file
+Do{CopyD Sched=F Dest="ftp://user:password@aawsbmkg.dyndns.org/xxx_?(Timestamp).csv" Format=csv Alarm=No Start=New}     'FTP push, ganti user & password dengan yang sesuai dan ganti xxxx dengan nama file
 
 RH10S                                           	'Status FTP
 If1(29SV==2)"Data Terkirim"
