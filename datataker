@@ -1,4 +1,4 @@
-Begin"AAWS_V20"
+Begin"AAWSB1_V20"
 
 'Add Pyranometer SMP3V versi modbus (br_29319)
 'Add Pyranometer SMP3V versi analog
@@ -656,4 +656,4 @@ If1(29SV==2)"Data Terkirim"
 If(29SV==2){29SV=0}
 
 End
-Runjobonreset"AAWS_V20"
+Runjobonreset"AAWSB1_V20"
