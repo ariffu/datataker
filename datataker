@@ -33,10 +33,11 @@ Profile ntp background_period="1H"
 Profile ntp min_correction="0"
 Profile ntp timeout="5s"
 Profile locale time_zone="0H"
+'''''''''''''''''''''''''''''''''
 Profile sersen_port function="serial"                'HMP155 serial
 Profile sersen_port bps="9600"
 Profile sersen_port mode="rs485"
-------------------------------
+'''''''''''''''''''''''''''''''''
 'Profile sersen_port function="modbus_master"        'Pyrano SMP3V modbus
 'Profile sersen_port bps="19200"
 'Profile sersen_port flow="NOFC"
@@ -372,7 +373,7 @@ if(40cv>1100){40CV=1100}
 'if(62cv<60cv){62cv=60cv}
 
 4*HV(S1,=60cv,w)                          	'Pyranometer Kipp n Zonen SMP3V (analog)
-60cv(w)=((60cv/xxx)*608CV)+609CV            'xxx = Nilai Sensitivity dibagi 1000 Lihat di Calibration Certificate (analog)
+'60cv(w)=((60cv/xxx)*608CV)+609CV            'xxx = Nilai Sensitivity dibagi 1000 Lihat di Calibration Certificate (analog)
 '60cv(w)=((60cv*608cv)+609cv)               'aktif bila modbus dan analog (klo slot tidak dipake sensor lain)
 if(60cv<0){60cv=0}
 if(60cv>2000){60cv=2000}
