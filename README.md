@@ -6,3 +6,5 @@ Remember to change user and password with the correct one  and also change xxxx 
 
 # file guidelines
 Keep main file name as "datataker" and for branch file as "name of location"
+
+sudah termasuk sensor pyranometer yang SMP3 ya yud ??
